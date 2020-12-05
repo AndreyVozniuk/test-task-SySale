@@ -1,0 +1,70 @@
+.select {
+	position: relative;
+  
+  &__header{
+    background: #FFFFFF;
+    height: 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+  }
+
+  &__current{
+    font-size: 14px;
+    padding: 8px 0px 8px 20px;
+  }
+
+  &__icon{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    text-align: center;
+    width: 40px;
+    transform-origin: center center;
+    transform: rotate(90deg);
+
+    &_show{
+      transition: 0.3s all;
+      transform: rotate(90deg);
+    }
+
+    &_hide{
+      transition: 0.3s all;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__body{
+    border-radius: 0px 0px 12px 12px;
+    background: #FFFFFF;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 95%;
+    height: 120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #E0E9F2;
+      border: 5px solid #fff;
+      border-radius: 15px;
+    }
+    display: none;
+  }
+
+  &__item{
+    padding: 8px 0px 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 24px;
+    &:hover{
+      background-color: #E0E9F2;
+    }
+  }
+}

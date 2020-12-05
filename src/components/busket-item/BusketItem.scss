@@ -1,0 +1,76 @@
+.busket-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+
+  &__photo{
+    height: 100%;
+    width: 150px;
+    
+    & > img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__counter{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92px;
+    height: 39px;
+    background: #E2E9F0;
+    border-radius: 30px;
+
+    button{
+      cursor: pointer;
+      outline: none;
+      cursor: pointer;
+      font-size: 25px;
+      background-color: transparent;
+      border: none;
+    }
+
+    button:nth-child(1){
+      cursor: pointer;
+      font-size: 35px;
+      padding-bottom: 5px;
+    }
+
+    span{
+      font-size: 20px;
+      margin-right: 12px;
+      margin-left: 12px;
+    }
+
+    &:hover{
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__line{
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 90%;
+    height: 1px;
+    background-color: #CF9E1F;
+  }
+
+  &__delete{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__name, &__price{
+    font-size: 20px;
+  }
+
+  &__volume, &__color{
+    font-size: 16px;
+  }
+}
